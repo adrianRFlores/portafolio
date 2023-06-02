@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+.ColorsHolder {
+    position: fixed;
+    left: 3%;
+    top: 3%;
+    width: 12%;
+    height: fit-content;
+}
+
+.toggler {
+    font-family: 'Source Code Pro', monospace;
+    border: 0;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: 0.25s linear;
+    margin-bottom: 10px;
+}
+
+.toggler:hover {
+    background-color: #ffffff10;
+}
+
+.toggler.y {
+    border: 2px solid white;
+}
+
+.toggler.n {
+    border: 2px solid transparent;
+}
+
+.PickerContainer.down{
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.PickerContainer.up {
+    display: none;
+}
+
+.scheme {
+    margin: 0px auto;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    transition: 0.15s linear;
+}
+
+.scheme:hover {
+    transform: translateX(10px);
+}
+
+.scheme .color:first-child {
+    border-radius: 20% 0 0 20%;
+}
+
+.scheme.up {
+    transform: rotateX(-90deg);
+    transform-origin: top center;
+    transition: 0.5s;
+}
+
+.scheme.down {
+    animation: rotateX 600ms;
+    transform-origin: top center;
+}
+
+.scheme .color:last-child {
+    border-radius: 0 20% 20% 0;
+}
+
+.color {
+    width: 33.33%;
+    height: 20px;
+}
+
+@keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
