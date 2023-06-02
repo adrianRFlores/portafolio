@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
 
 .ColorsHolder {
+    z-index: 10000;
     position: fixed;
     left: 3%;
     top: 3%;

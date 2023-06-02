@@ -3,9 +3,9 @@ import './ColorPicker.css'
 
 const ColorPicker = ({ callback }) => {
   let colors = [
-    ['#4361EE', '#AA73D4', '#662C91'],
+    ['#662C91', '#AA73D4', '#4361EE'],
     ['#25527A', '#1295A7', '#E73B25'],
-		['#102942', '#105D72', '#B1D711']
+	['#102942', '#105D72', '#B1D711']
   ]
 
   const [current, setCurrent] = useState(0)
