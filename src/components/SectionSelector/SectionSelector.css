@@ -1,0 +1,24 @@
+.sectionSelector {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+.sectionBtn {
+    padding: 1% 2.5%;
+    border-radius: 25px;
+    color: white;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 0;
+    transition: 0.2s;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.sectionBtn.n:hover {
+    border: 2px solid #ffffff0f;
+}

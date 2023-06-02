@@ -1,15 +1,13 @@
 .cardContainer {
     z-index: 99;
-    width: 25%;
-    height: fit-content;
-    height: 400px;
-    background-color: rgb(35, 35, 35, 0.9);
-    display: flex;
-    flex-direction: column;
+    width: 20%;
+    height: 26rem;
+    background-color: rgb(35, 35, 35);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     border-radius: 15px;
     overflow: hidden;
     padding-bottom: 5px;
-    margin: 1% 5%;
 }
 
 .cardContainer h1, .cardContainer p  {
@@ -18,7 +16,8 @@
 }
 
 .cardContainer h1 {
-    margin: 1% 3%;
+    justify-self: flex-start;
+    margin: 1.5% 3%;
 }
 
 .cardContainer p {
@@ -26,14 +25,32 @@
 }
 
 .cardContainer a {
+    justify-self: flex-end;
     align-self: flex-end;
     font-weight: 500;
     text-decoration: none;
     font-size: 1.2rem;
     transition: 0.25s;
+    margin: 0px 5% 2.5% 0px;
+}
+
+.cardContainer a:hover {
+    animation: animateLink 1s ease-in-out;
 }
 
 .cardContainer img {
     width: 100%;
     object-fit: cover;
+}
+
+@keyframes animateLink {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
 }

@@ -46,10 +46,61 @@ h1, h2, h3 {
 }
 
 .projectContainer {
+  z-index: 98;
   margin-top: 45%;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 10%;
+}
+
+.projectContainer span {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1%;
+  align-self: center;
+}
+
+.cardHolder {
+  margin-top: 1%;
   height: fit-content;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.aboutMeHolder {
+  height: 26rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1%;
+}
+
+.generalInfo {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 0px auto;
+}
+
+.bio {
+  margin: auto 0px;
+}
+
+.bio p {
+  margin-right: 20%;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.textHolder {
+  display: flex;
+  flex-direction: column;
+  height: 26rem;
+  margin-top: 1%;
+  justify-content: center;
 }
