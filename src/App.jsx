@@ -84,7 +84,7 @@ function App() {
         </MouseParallax>
       </div>
       <ColorPicker callback={pickerCallback} />
-      <ScrollParallax strength={0.6}>
+      <ScrollParallax strength={0.6} lerpEase={0.1}>
         <div className="titleContainer">
           <h1 className="name">Adrián Flores</h1>
           <div className="separator"  style={{backgroundColor: colors[1]}} />
